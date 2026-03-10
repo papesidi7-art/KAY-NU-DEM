@@ -1,16 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
 <head>
-  <title>KAY NIU DEM</title>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
+<title>KAY NIU DEM</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <h1>KAY NIU DEM</h1>
+<p>Plateforme de covoiturage</p>
 
-<button onclick="publishTrip()">Publier trajet</button>
+<div class="box">
+
+<label>Lieu de RDV</label>
+<input id="rdv-location" type="text" placeholder="Ex: Gare de Dakar">
+
+<label>Prix par passager (FCFA)</label>
+<input id="driver-price" type="number" placeholder="Ex: 2000">
+
+<label>Nombre de places</label>
+<input id="seats" type="number" value="3">
+
+<button onclick="publishTrip()">Publier le trajet</button>
+
+</div>
+
+<div id="result"></div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
